@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAMI UNC – Events</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+<div class="page">
+
+    <!-- HEADER  -->
+    <header>
+        <div class="brand">
+            <div class="logo-circle"></div>
+            <span>NAMI UNC</span>
+        </div>
+
+        <input type="checkbox" id="nav-toggle">
+
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+            <a href="donate.html">Donate</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- Calendar card -->
+        <section class="card events-card">
+            <h1 class="page-title">Events</h1>
+
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button class="cal-arrow" type="button">&lt;</button>
+
+                    <label for="month" class="sr-only">Select Month</label>
+                    <select id="month">
+                        <option>Sep</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                    </select>
+
+            <label for="year" class="sr-only">Select Year</label>
+            <select id="year">
+                <option>2025</option>
+                <option>2026</option>
+            </select>
+
+
+                    <button class="cal-arrow" type="button">&gt;</button>
+                </div>
+
+                <div class="calendar-grid">
+                    <!-- weekday row -->
+                    <div class="weekday">Su</div>
+                    <div class="weekday">Mo</div>
+                    <div class="weekday">Tu</div>
+                    <div class="weekday">We</div>
+                    <div class="weekday">Th</div>
+                    <div class="weekday">Fr</div>
+                    <div class="weekday">Sa</div>
+
+                    <!-- first row -->
+                    <div></div><div></div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+
+                    <!-- second row -->
+                    <div>6</div><div>7</div><div class="day-selected">8</div>
+                    <div class="day-selected">9</div>
+                    <div class="day-light">10</div>
+                    <div class="day-light">11</div>
+                    <div class="day-selected">12</div>
+
+                    <!-- third row -->
+                    <div class="day-selected">13</div><div>14</div><div>15</div>
+                    <div>16</div><div>17</div><div>18</div><div>19</div>
+
+                    <!-- fourth row -->
+                    <div>20</div><div>21</div><div>22</div><div>23</div>
+                    <div>24</div><div>25</div><div>26</div>
+
+                    <!-- fifth row -->
+                    <div>27</div><div>28</div><div>29</div><div>30</div>
+                    <div class="day-faded">1</div><div class="day-faded">2</div><div class="day-faded">3</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sign-up card -->
+        <section class="card signup-card">
+            <div class="signup-title">Sign up to stay updated!</div>
+
+            <form class="event-form">
+                <label for="name">Name</label>
+                <input id="name" type="text">
+
+                <label for="email">E-Mail</label>
+                <input id="email" type="email">
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 NAMI UNC.
+    </footer>
+
+</div>
+</body>
+</html>

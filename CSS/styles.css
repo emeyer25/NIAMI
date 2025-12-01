@@ -1,0 +1,285 @@
+/* ===== BASIC RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue-dark: #174886;
+    --blue-mid: #88a5c3;
+    --blue-light: #d5e5f4;
+    --yellow-light: #f5f58b;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER + NAVIGATION */
+header {
+    background-color: var(--blue-dark);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    position: relative;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.logo-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #f6d46b;
+}
+
+/* ----- HAMBURGER ----- */
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* hamburger icon (3 bars) */
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background-color: white;
+    width: 26px;
+    height: 3px;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.nav-toggle-label span::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+/* ----- NAV DROPDOWN ----- */
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 70%;
+    background-color: var(--blue-dark);
+    padding: 15px;
+    border-bottom-left-radius: 12px;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 10px 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+#nav-toggle:checked + .nav-toggle-label + .nav-menu {
+    display: block;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 18px 16px 24px;
+}
+
+/* Generic card */
+.card {
+    background-color: var(--blue-light);
+    border-radius: 16px;
+    padding: 18px;
+    margin-bottom: 24px;
+}
+
+/* Welcome card */
+.welcome-card h1 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.welcome-card p {
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Image card */
+.image-card {
+    background-color: #ffffff;
+    padding: 0;
+}
+
+.image-frame {
+    margin: 0 auto;
+    max-width: 90%;
+    border: 8px solid var(--yellow-light);
+    border-radius: 18px;
+    padding: 10px;
+}
+
+.image-frame img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--blue-dark);
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 0;
+    margin-top: auto;
+    font-size: 0.95rem;
+}
+
+/* EVENTS PAGE */
+
+.page-title {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+/* Outer blue card already from .card */
+.events-card {
+    background-color: var(--blue-mid);
+}
+
+/* Inner calendar area */
+.calendar-container {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 12px;
+}
+
+/* top row with arrows + selects */
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.cal-arrow {
+    border: none;
+    background-color: transparent;
+    font-size: 1.1rem;
+}
+
+/* simple dropdown styling */
+.calendar-header select {
+    padding: 4px 10px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+}
+
+/* calendar grid */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+/* weekdays row */
+.weekday {
+    font-weight: bold;
+    padding: 4px 0;
+}
+
+/* default day cells */
+.calendar-grid div {
+    padding: 6px 0;
+    border-radius: 8px;
+}
+
+/* styles for different day states */
+.day-selected {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.day-light {
+    background-color: #eeeeee;
+}
+
+.day-faded {
+    color: #cccccc;
+}
+
+/* ===== Sign-up card ===== */
+.signup-card {
+    background-color: var(--blue-mid);
+}
+
+.signup-title {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 12px;
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+
+.event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.event-form label {
+    color: #ffffff;
+}
+
+.event-form input {
+    border: none;
+    border-radius: 999px;
+    padding: 8px 10px;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    border: 1px solid #c0d3ea;
+    background-color: var(--blue-light);
+}
