@@ -1,4 +1,3 @@
-/* ===== BASIC RESET ===== */
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +23,8 @@ body {
 }
 
 /* HEADER + NAVIGATION */
+
+
 header {
     background-color: var(--blue-dark);
     color: #ffffff;
@@ -48,7 +49,7 @@ header {
     background-color: #f6d46b;
 }
 
-/* ----- HAMBURGER ----- */
+/*  hamburger  */
 #nav-toggle {
     display: none;
 }
@@ -58,7 +59,6 @@ header {
     cursor: pointer;
 }
 
-/* hamburger icon (3 bars) */
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
@@ -90,7 +90,7 @@ header {
     background-color: white;
 }
 
-/* ----- NAV DROPDOWN ----- */
+/*  nav dropdown  */
 .nav-menu {
     display: none;
     position: absolute;
@@ -114,12 +114,13 @@ header {
     display: block;
 }
 
-/* MAIN CONTENT */
+
+
+/* WELCOME (index) PAGE */
 main {
     padding: 18px 16px 24px;
 }
 
-/* Generic card */
 .card {
     background-color: var(--blue-light);
     border-radius: 16px;
@@ -127,7 +128,6 @@ main {
     margin-bottom: 24px;
 }
 
-/* Welcome card */
 .welcome-card h1 {
     text-align: center;
     font-size: 1.25rem;
@@ -139,7 +139,6 @@ main {
     line-height: 1.4;
 }
 
-/* Image card */
 .image-card {
     background-color: #ffffff;
     padding: 0;
@@ -159,7 +158,8 @@ main {
     border-radius: 4px;
 }
 
-/* FOOTER */
+
+
 footer {
     background-color: var(--blue-dark);
     color: #ffffff;
@@ -169,6 +169,9 @@ footer {
     font-size: 0.95rem;
 }
 
+
+
+
 /* EVENTS PAGE */
 
 .page-title {
@@ -177,19 +180,16 @@ footer {
     margin-bottom: 12px;
 }
 
-/* Outer blue card already from .card */
 .events-card {
     background-color: var(--blue-mid);
 }
 
-/* Inner calendar area */
 .calendar-container {
     background-color: #ffffff;
     border-radius: 16px;
     padding: 12px;
 }
 
-/* top row with arrows + selects */
 .calendar-header {
     display: flex;
     align-items: center;
@@ -204,7 +204,6 @@ footer {
     font-size: 1.1rem;
 }
 
-/* simple dropdown styling */
 .calendar-header select {
     padding: 4px 10px;
     border-radius: 8px;
@@ -220,19 +219,16 @@ footer {
     font-size: 0.85rem;
 }
 
-/* weekdays row */
 .weekday {
     font-weight: bold;
     padding: 4px 0;
 }
 
-/* default day cells */
 .calendar-grid div {
     padding: 6px 0;
     border-radius: 8px;
 }
 
-/* styles for different day states */
 .day-selected {
     background-color: #000000;
     color: #ffffff;
@@ -246,7 +242,7 @@ footer {
     color: #cccccc;
 }
 
-/* ===== Sign-up card ===== */
+/*  Sign-up card  */
 .signup-card {
     background-color: var(--blue-mid);
 }
@@ -282,4 +278,227 @@ footer {
     border-radius: 6px;
     border: 1px solid #c0d3ea;
     background-color: var(--blue-light);
+}
+
+
+
+
+/* CONTACT PAGE */
+
+.contact-card {
+    background-color: var(--blue-light);
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.contact-heading h1 {
+    font-size: 1.25rem;
+    margin-bottom: 6px;
+}
+
+.contact-heading p {
+    line-height: 1.4;
+}
+
+.contact-info {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+}
+
+.contact-info h2 {
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li + li {
+    margin-top: 4px;
+}
+
+.contact-info a {
+    text-decoration: underline;
+}
+
+.contact-form-section {
+    background-color: var(--blue-mid);
+    border-radius: 12px;
+    padding: 12px 14px;
+    color: #ffffff;
+}
+
+.contact-form-section h2 {
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+}
+
+.required-hint {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-form label {
+    font-size: 0.95rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: none;
+    border-radius: 999px;
+    padding: 8px 10px;
+    font: inherit;
+}
+
+.contact-form textarea {
+    border-radius: 12px;
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-submit {
+    margin-top: 10px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    border: 1px solid #c0d3ea;
+    background-color: var(--blue-light);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+
+/* DONATE PAGE */
+
+.donate-card {
+    background-color: var(--blue-light);
+}
+
+.donate-heading {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.donate-heading h1 {
+    font-size: 1.35rem;
+    margin-bottom: 6px;
+}
+
+.donate-heading p {
+    line-height: 1.4;
+}
+
+.donate-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.donate-box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 14px;
+}
+
+.donate-box h2 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.donate-box p {
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.donate-box a {
+    color: var(--blue-dark);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.donate-btn {
+    margin-top: 10px;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: 1px solid #c0d3ea;
+    background-color: var(--blue-mid);
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff;
+    width: fit-content;
+}
+
+.donate-btn:hover {
+    opacity: 0.9;
+}
+
+
+
+/* RESOURCES PAGE */
+
+.resources-card {
+    background-color: var(--blue-light);
+}
+
+.resources-heading {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.resources-heading h1 {
+    font-size: 1.35rem;
+    margin-bottom: 6px;
+}
+
+.resources-heading p {
+    line-height: 1.4;
+}
+
+.resource-section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 14px;
+}
+
+.resource-section h2 {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+
+.resource-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resource-section li {
+    margin-bottom: 6px;
+    line-height: 1.35;
+}
+
+.resource-section a {
+    color: var(--blue-dark);
+    text-decoration: underline;
+    font-weight: 600;
 }

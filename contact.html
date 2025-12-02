@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAMI UNC – Contact</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+<div class="page">
+
+    <header>
+        <div class="brand">
+            <div class="logo-circle"></div>
+            <span>NAMI UNC</span>
+        </div>
+
+        <input type="checkbox" id="nav-toggle">
+
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+            <a href="donate.html">Donate</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="card contact-card">
+            <div class="contact-heading">
+                <h1>Contact NAMI on Campus</h1>
+                <p>
+                    Have questions about meetings, events, or how to get involved?
+                    Reach out to us using the info below or send us a message.
+                </p>
+            </div>
+
+            <!-- Contact info block -->
+            <section class="contact-info" aria-labelledby="contact-info-heading">
+                <h2 id="contact-info-heading">Club Contact Information</h2>
+                <p>
+                    NAMI on Campus at UNC Chapel Hill is a student organization dedicated
+                    to mental health advocacy, education, and support.
+                </p>
+                <ul>
+                    <li>
+                        <strong>Email:</strong>
+                        <a href="mailto:uncnami2024@office.unc.edu">
+                            uncnami2024@office.unc.edu
+                        </a>
+                    </li>
+                    <li>
+                        <strong>Heel Life page:</strong>
+                        <a href="https://heellife.unc.edu/organization/nami-unc" target="_blank" rel="noopener">
+                            NAMI on Campus on Heel Life
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="contact-form-section" aria-labelledby="contact-form-heading">
+                <h2 id="contact-form-heading">Send Us a Message</h2>
+                <p class="required-hint">* indicates required field</p>
+
+                <form class="contact-form" action="#" method="get">
+                    <div>
+                        <label for="name">Name *</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="email">Email *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="subject">Subject</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Meeting, event, volunteering, etc."
+                        >
+                    </div>
+
+                    <div>
+                        <label for="message">Message *</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-submit">Send Message</button>
+                </form>
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2025 NAMI UNC.
+    </footer>
+
+</div>
+</body>
+</html>
