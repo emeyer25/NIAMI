@@ -43,11 +43,23 @@ header {
 }
 
 .logo-circle {
-    width: 32px;
-    height: 32px;
+    width: 38px;          
+    height: 38px;
     border-radius: 50%;
-    background-color: #f6d46b;
+    background-color: #ffffff;
+    display: flex;         
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;      
 }
+
+.logo-circle img {
+    width: 100%;          
+    height: 100%;
+    object-fit: cover;  
+    border-radius: 50%;
+}
+
 
 /*  hamburger  */
 #nav-toggle {
@@ -108,6 +120,12 @@ header {
     color: #ffffff;
     text-decoration: none;
     font-size: 1.1rem;
+    transition: background-color 0.2s ease, padding-left 0.2s ease;
+}
+
+.nav-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    padding-left: 8px; 
 }
 
 #nav-toggle:checked + .nav-toggle-label + .nav-menu {
@@ -210,7 +228,6 @@ footer {
     border: 1px solid #dddddd;
 }
 
-/* calendar grid */
 .calendar-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -242,7 +259,6 @@ footer {
     color: #cccccc;
 }
 
-/*  Sign-up card  */
 .signup-card {
     background-color: var(--blue-mid);
 }
@@ -501,4 +517,45 @@ footer {
     color: var(--blue-dark);
     text-decoration: underline;
     font-weight: 600;
+}
+
+@media (min-width: 768px) {
+
+    body {
+        background-color: #f3f5f9; 
+    }
+
+    main {
+        max-width: 900px;
+        margin: 24px auto 32px;
+    }
+
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        padding: 0;
+        margin-left: auto;
+        border-radius: 0;
+        gap: 16px;
+    }
+
+    .nav-menu a {
+        padding: 0;
+        font-size: 1rem;
+
+        
+    }
+
+    .nav-menu a:hover {
+        background-color: rgba(255, 255, 255, 0.12);
+        padding-left: 0; 
+
+}
 }
