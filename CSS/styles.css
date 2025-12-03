@@ -202,61 +202,27 @@ footer {
     background-color: var(--blue-mid);
 }
 
-.calendar-container {
-    background-color: #ffffff;
-    border-radius: 16px;
-    padding: 12px;
-}
-
-.calendar-header {
+.events-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 10px;
+    flex-direction: column;
+    gap: 14px;
 }
 
-.cal-arrow {
-    border: none;
-    background-color: transparent;
+.event-item {
+    background-color: #ffffff;
+    padding: 14px;
+    border-radius: 12px;
+    line-height: 1.45;
+}
+
+.event-item h2 {
     font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: var(--blue-dark);
 }
 
-.calendar-header select {
-    padding: 4px 10px;
-    border-radius: 8px;
-    border: 1px solid #dddddd;
-}
-
-.calendar-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 4px;
-    text-align: center;
-    font-size: 0.85rem;
-}
-
-.weekday {
-    font-weight: bold;
-    padding: 4px 0;
-}
-
-.calendar-grid div {
-    padding: 6px 0;
-    border-radius: 8px;
-}
-
-.day-selected {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-.day-light {
-    background-color: #eeeeee;
-}
-
-.day-faded {
-    color: #cccccc;
+.event-item p {
+    margin-bottom: 4px;
 }
 
 .signup-card {
@@ -295,7 +261,6 @@ footer {
     border: 1px solid #c0d3ea;
     background-color: var(--blue-light);
 }
-
 
 
 
